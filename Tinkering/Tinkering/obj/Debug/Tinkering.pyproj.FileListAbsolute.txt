@@ -1,0 +1,10 @@
+C:\Users\jacob.n\Desktop\Programing 1\Tinkering\Tinkering\bin\Debug\Tinkering.exe.config
+C:\Users\jacob.n\Desktop\Programing 1\Tinkering\Tinkering\bin\Debug\Tinkering.exe
+C:\Users\jacob.n\Desktop\Programing 1\Tinkering\Tinkering\bin\Debug\Tinkering.dll
+C:\Users\jacob.n\Desktop\Programing 1\Tinkering\Tinkering\bin\Debug\IronPython.dll
+C:\Users\jacob.n\Desktop\Programing 1\Tinkering\Tinkering\bin\Debug\IronPython.Modules.dll
+C:\Users\jacob.n\Desktop\Programing 1\Tinkering\Tinkering\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\jacob.n\Desktop\Programing 1\Tinkering\Tinkering\bin\Debug\Microsoft.Scripting.dll
+C:\Users\jacob.n\Desktop\Programing 1\Tinkering\Tinkering\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\jacob.n\Desktop\Programing 1\Tinkering\Tinkering\obj\Debug\Tinkering.pyprojResolveAssemblyReference.cache
+C:\Users\jacob.n\Desktop\Programing 1\Tinkering\Tinkering\obj\Debug\Tinkering.exe
