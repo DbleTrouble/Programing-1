@@ -247,11 +247,13 @@ class MainForm(Form):
         amount_recived = float(self._textBox2.Text)
         change_due = (amount_recived - purchase_price)
         self._textBox3.Text = str(change_due)
+        
         dollar = (change_due // 1)
         quarter = ((change_due - dollar) // .25)
         dime = ((change_due - dollar - (quarter * .25)) // .10)
         nickel = ((change_due - dollar - (quarter * .25) - (dime * .10)) // .05)
         penny = ((change_due - dollar - (quarter * .25) - (dime * .10) - (nickel * .05)) // .01)
+        
         self._label9.Text = str(dollar)
         self._label10.Text = str(quarter)
         self._label11.Text = str(dime)
