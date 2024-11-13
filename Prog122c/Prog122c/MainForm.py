@@ -79,7 +79,8 @@ class MainForm(Form):
         for num in range(2,11,2):
             num2 = num + 1
             num3 = num * 2
-            line = str(num) + "\t" + str(num2) + "\t" + str(num3)
+            num4 = num ** 2
+            line = str(num) + "\t" + str(num2) + "\t" + str(num3) + "\t" + str(num4)
             self._listBox1.Items.Add(line)
         
         
