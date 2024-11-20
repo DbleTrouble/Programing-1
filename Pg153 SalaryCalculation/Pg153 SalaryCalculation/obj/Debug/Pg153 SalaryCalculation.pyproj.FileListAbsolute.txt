@@ -1,0 +1,12 @@
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\bin\Debug\Pg153 SalaryCalculation.exe.config
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\bin\Debug\Pg153 SalaryCalculation.exe
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\bin\Debug\Pg153 SalaryCalculation.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\bin\Debug\IronPython.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\bin\Debug\IronPython.Modules.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\bin\Debug\Microsoft.Scripting.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\obj\Debug\Pg153 SalaryCalculation.pyprojResolveAssemblyReference.cache
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\obj\Debug\Pg153_SalaryCalculation.MainForm.resources
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\obj\Debug\Pg153 SalaryCalculation.pyproj.GenerateResource.Cache
+C:\Users\jacob.n\Desktop\Programing 1\Pg153 SalaryCalculation\Pg153 SalaryCalculation\obj\Debug\Pg153 SalaryCalculation.exe
