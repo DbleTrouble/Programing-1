@@ -165,16 +165,15 @@ class MainForm(Form):
         G = int(self._textBox1.Text)
         C = int(self._textBox2.Text)
         Ca = abs(C)
+        P = G
+        S = G - Ca
+        self._label6.Text = str(S)
         
+        for num in range(G-1,S,-1):
+            P *= num
+            self._label5.Text = str(P)
         
-        
-        for num in range(G,1,-1):
-            V = G * (G - 1) * num
-            T = G * V / (G - Ca) * V
-            self._label5.Text = str(T)
-        
-        GS = G - Ca
-        self._label6.Text = str(GS)
+       
 
     def Button3Click(self, sender, e):
         Application.Exit()

@@ -1,0 +1,12 @@
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\bin\Debug\Slot Machine.exe.config
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\bin\Debug\Slot Machine.exe
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\bin\Debug\Slot Machine.dll
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\bin\Debug\IronPython.dll
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\bin\Debug\IronPython.Modules.dll
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\bin\Debug\Microsoft.Scripting.dll
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\obj\Debug\Slot Machine.pyprojResolveAssemblyReference.cache
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\obj\Debug\Slot_Machine.MainForm.resources
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\obj\Debug\Slot Machine.pyproj.GenerateResource.Cache
+C:\Users\jacob.n\Desktop\Programing 1\Slot Machine\Slot Machine\obj\Debug\Slot Machine.exe
