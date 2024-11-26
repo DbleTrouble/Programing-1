@@ -9,9 +9,12 @@ class MainForm(Form):
         self.InitializeComponent()
     
     def InitializeComponent(self):
+        self.SuspendLayout()
         # 
         # MainForm
         # 
+        self.ClientSize = System.Drawing.Size(439, 485)
         self.Name = "MainForm"
         self.Text = "Pg162 RoomCharge"
+        self.ResumeLayout(False)
 
