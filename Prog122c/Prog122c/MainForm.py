@@ -23,14 +23,14 @@ class MainForm(Form):
         self._listBox1.ItemHeight = 16
         self._listBox1.Location = System.Drawing.Point(12, 12)
         self._listBox1.Name = "listBox1"
-        self._listBox1.Size = System.Drawing.Size(338, 388)
+        self._listBox1.Size = System.Drawing.Size(338, 164)
         self._listBox1.TabIndex = 0
         # 
         # button1
         # 
         self._button1.BackColor = System.Drawing.Color.FromArgb(128, 255, 255)
         self._button1.Font = System.Drawing.Font("Microsoft Sans Serif", 9.75, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
-        self._button1.Location = System.Drawing.Point(13, 406)
+        self._button1.Location = System.Drawing.Point(12, 193)
         self._button1.Name = "button1"
         self._button1.Size = System.Drawing.Size(89, 58)
         self._button1.TabIndex = 1
@@ -42,7 +42,7 @@ class MainForm(Form):
         # 
         self._button2.BackColor = System.Drawing.Color.FromArgb(128, 255, 255)
         self._button2.Font = System.Drawing.Font("Microsoft Sans Serif", 9.75, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
-        self._button2.Location = System.Drawing.Point(138, 406)
+        self._button2.Location = System.Drawing.Point(138, 193)
         self._button2.Name = "button2"
         self._button2.Size = System.Drawing.Size(89, 58)
         self._button2.TabIndex = 2
@@ -54,7 +54,7 @@ class MainForm(Form):
         # 
         self._button3.BackColor = System.Drawing.Color.FromArgb(128, 255, 255)
         self._button3.Font = System.Drawing.Font("Microsoft Sans Serif", 9.75, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
-        self._button3.Location = System.Drawing.Point(261, 406)
+        self._button3.Location = System.Drawing.Point(261, 193)
         self._button3.Name = "button3"
         self._button3.Size = System.Drawing.Size(89, 58)
         self._button3.TabIndex = 3
@@ -65,7 +65,7 @@ class MainForm(Form):
         # MainForm
         # 
         self.BackColor = System.Drawing.SystemColors.ActiveCaption
-        self.ClientSize = System.Drawing.Size(362, 476)
+        self.ClientSize = System.Drawing.Size(362, 263)
         self.Controls.Add(self._button3)
         self.Controls.Add(self._button2)
         self.Controls.Add(self._button1)
