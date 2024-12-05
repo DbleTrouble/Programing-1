@@ -155,15 +155,23 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        self._radioButton1.Check == True
-        self._radioButton2.Check == True
-        self._radioButton3.Check == True
+        stri = ""
         
-        self._checkBox1.Check == True
-        self._checkBox2.Check == True
-        self._checkBox3.Check == True
+        if self._radioButton1.Checked == True:
+            stri = "Choice 1"
+        elif self._radioButton2.Checked == True:
+            stri = "Choice 2"
+        elif self._radioButton2.Checked == True:
+            stri = "Choice 2"
         
+        if self._checkBox1.Checked == True:
+            stri += " and Choice 4"
+        if self._checkBox2.Checked == True:
+            stri += " and Choice 5"
+        if self._checkBox3.Checked == True:
+            stri += " and Choice 6"
         
+        MessageBox.Show(str(stri) + " Selected!")
 
     def Button2Click(self, sender, e):
         Application.Exit()
