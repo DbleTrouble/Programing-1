@@ -1,11 +1,11 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
   <PropertyGroup>
-    <ProjectGuid>{3A4B7BB8-915A-41D6-B0FE-F95AD770AB50}</ProjectGuid>
+    <ProjectGuid>{D538546E-0D1E-4DA5-8154-AAA29C4FE1ED}</ProjectGuid>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <RootNamespace>Pg240_CommissionCalculator</RootNamespace>
-    <AssemblyName>Pg240 CommissionCalculator</AssemblyName>
+    <RootNamespace>Pg250_MembershipFee</RootNamespace>
+    <AssemblyName>Pg250 MembershipFee</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>x86</PlatformTarget>

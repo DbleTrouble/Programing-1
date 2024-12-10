@@ -185,6 +185,7 @@ class MainForm(Form):
         A = float(self._textBox2.Text)
         CR = 0.0
         C = 0.0
+        N = 0.0
         
         if S < 10000:
             CR = 0.05
@@ -196,7 +197,12 @@ class MainForm(Form):
             CR = 0.14
         elif S >= 22000:
             CR = 0.15
-        C = S * CR   
+        C = S * CR
+        N = C - A
+        
+        self._label6.Text = str(round(CR, 2))
+        self._label7.Text = str(round(C, 2))
+        self._label8.Text = str(round(N, 2))
 
     def Button2Click(self, sender, e):
         self._textBox1.Text = ""
