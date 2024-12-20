@@ -12,7 +12,6 @@ class MainForm(Form):
         self.balld = 0
         self.flagleft = False
         self.flagright = False
-        
     
     def InitializeComponent(self):
         self._components = System.ComponentModel.Container()
@@ -33,7 +32,7 @@ class MainForm(Form):
         # lbltitle
         # 
         self._lbltitle.BackColor = System.Drawing.Color.Transparent
-        self._lbltitle.Font = System.Drawing.Font("Microsoft Sans Serif", 20.25, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
+        self._lbltitle.Font = System.Drawing.Font("Microsoft Sans Serif", 20, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, 0)
         self._lbltitle.ForeColor = System.Drawing.Color.White
         self._lbltitle.Location = System.Drawing.Point(12, 25)
         self._lbltitle.Name = "lbltitle"
@@ -88,6 +87,7 @@ class MainForm(Form):
         self._lblleft.Size = System.Drawing.Size(20, 100)
         self._lblleft.TabIndex = 4
         self._lblleft.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        self._lblleft.Click += self.LblleftClick
         # 
         # lblright
         # 
@@ -99,6 +99,11 @@ class MainForm(Form):
         self._lblright.Size = System.Drawing.Size(20, 100)
         self._lblright.TabIndex = 5
         self._lblright.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        self._lblright.Click += self.LblrightClick
+        # 
+        # timerdummy
+        # 
+        self._timerdummy.Tick += self.TimerdummyTick
         # 
         # timerright
         # 
@@ -122,7 +127,7 @@ class MainForm(Form):
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.Black
-        self.ClientSize = System.Drawing.Size(988, 607)
+        self.ClientSize = System.Drawing.Size(982, 590)
         self.Controls.Add(self._lblright)
         self.Controls.Add(self._lblleft)
         self.Controls.Add(self._lblball)
@@ -138,10 +143,132 @@ class MainForm(Form):
 
 
     def TimerballTick(self, sender, e):
-        pass
+        ball = self._lblball
+        lpdl = self._lblleft
+        rpdl = self._lblright
+        rscore = int(self._rightscore.Text)
+        lscore = int(self._leftscore.Text)
+        ball.Top += self.ballup
+        ball.Left += 8 * self.balld
+        
+        if ball.Right >= rpdl.Right and ball.Bottom >= rpdl.Top and ball.Top <= rpdl.Bottom:
+            self.balld = -1
+            self.ballup = self.R.Next(-4, 5)
+        elif ball.Left <= lpdl.Left and ball.Bottom >= lpdl.Top and ball.Top <= lpdl.Bottom:
+            self.balld = 1
+            self.ballup = self.R.Next(-4, 5)
+            
+        if ball.Top <= self.Top + 10:
+            self.ballup = 1
+        elif ball.Top >= self.Height - 50:
+            self.ballup = -1
+            
+        if ball.Location.X <= 0 or ball.Location.X < lpdl.Left - 20:
+               rscore += 1
+               self._rightscore.Text = str(rscore)
+               ball.Left = self.Width // 2
+               ball.Top = self.Height // 2
+           
+        if ball.Location.X >= self.Width or ball.Location.X > rpdl.Right + 20:
+               lscore += 1
+               self._leftscore.Text = str(lscore)
+               ball.Left = self.Width // 2
+               ball.Top = self.Height // 2
+               
+        if rscore == 10:
+            self._timerball.Enabled = False
+            ball.Left = self.Width // 2
+            ball.Top = self.Height // 2
+            self.ballup = 0
+            self._lbltitle.Text = "Right Player Wins! Press R to restart"
+            self._lbltitle.Visible = True
+        
+        if lscore == 10:  # Left win condition
+            self._timerball.Enabled = False
+            ball.Left = self.Width // 2
+            ball.Top = self.Height // 2
+            self.ballup = 0
+            self._lbltitle.Text = "Left Player Wins! Press R to restart"
+            self._lbltitle.Visible = True
+            
+        if self._timerboolean.Enabled:
+            lpdl.Top = ball.Top - 20
 
     def MainFormKeyDown(self, sender, e):
-        pass
+        tball  = self._timerball
+        tdum   = self._timerdummy
+        tbool  = self._timerboolean
+        tmult  = self._timermulti
+        tleft  = self._timerleft
+        tright = self._timerright
+        bl     = self._lblball
+        lpdl   = self._lblleft
+        rpdl   = self._lblright
+        title  = self._lbltitle
+        
+        def reset():
+            title.Visible = True
+            title.Text = "Press Enter to Start or M to start Multiplayer"
+            self._leftscore.Text = "0"
+            self._rightscore.Text = "0"
+            tball.Enabled  = False 
+            tbool.Enabled  = False
+            tdum.Enabled   = False
+            tmult.Enabled  = False 
+            tleft.Enabled  = False
+            tright.Enabled = False
+            bl.Left = self.Width // 2
+            bl.Top = self.Height // 2
+            lpdl.Top = (self.Height // 2) - 50 + lpdl.Height
+            rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
+            # TODO: Reset Secrets
+            bl.BackColor = Color.White
+            self.BackColor = Color.Black
+            self._lblleft.BackColor = Color.White
+            self._lblright.BackColor = Color.White
+        
+        if e.KeyCode == Keys.R:
+            reset()
+        
+        
+        # Secret Controls
+        if e.KeyCode == Keys.Left:
+            self.flagright = False
+            tright.Enabled = False
+        
+        
+        if e.KeyCode == Keys.Enter:
+            tball.Enabled = True
+            tdum.Enabled = True
+            tbool.Enabled = not tmult.Enabled
+            title.Visible = False
+            
+        if e.KeyCode == Keys.M:
+            reset()
+            title.Visible = True
+            title.Text = "Use W and S to move the left paddle; hit Enter to start"
+            tmult.Enabled = True
+            
+        if tdum.Enabled:
+            if e.KeyCode == Keys.Up:
+                self.flagright = False
+                tright.Enabled = True
+            elif e.KeyCode == Keys.Down:
+                self.flagright = True
+                tright.Enabled = True
+                
+        
+        if tmult.Enabled and tball.Enabled:
+            if e.KeyCode == Keys.W:
+                self.flagleft = False
+                tleft.Enabled = True
+            elif e.KeyCode == Keys.S:
+                self.flagleft = True
+                tleft.Enabled = True
+            elif e.KeyCode == Keys.D:
+                self.flagleft = False
+                tleft.Enabled = False
+           
 
     def MainFormLoad(self, sender, e):
         # TODO: add 3 unique secrets/cheats/easter eggs in total & finsh multiplayer & scoreboard & dummy ai
@@ -173,3 +300,19 @@ class MainForm(Form):
         self._lblball.Left = self.Width // 2
         self._lblball.Top = self.Height // 2
         
+
+    def TimerdummyTick(self, sender, e):
+        ball = self._lblball
+        lpdl = self._lblleft
+        tdum = self._timerdummy
+        
+        if tdum.Enabled:
+            self._timerdummy.Interval = self.R.Next(100,10000000) 
+
+    def LblleftClick(self, sender, e):
+        self._lblleft.BackColor = Color.Blue
+        self._lblright.BackColor = Color.Blue
+
+    def LblrightClick(self, sender, e):
+        self._lblleft.BackColor = Color.Red
+        self._lblright.BackColor = Color.Red

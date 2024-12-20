@@ -1,0 +1,12 @@
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\obj\Debug\Pg269 SoftwareSales.pyprojResolveAssemblyReference.cache
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\obj\Debug\Pg269_SoftwareSales.MainForm.resources
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\obj\Debug\Pg269 SoftwareSales.pyproj.GenerateResource.Cache
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\bin\Debug\Pg269 SoftwareSales.exe.config
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\bin\Debug\Pg269 SoftwareSales.exe
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\bin\Debug\Pg269 SoftwareSales.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\bin\Debug\IronPython.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\bin\Debug\IronPython.Modules.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\bin\Debug\Microsoft.Scripting.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\jacob.n\Desktop\Programing 1\Pg269 SoftwareSales\Pg269 SoftwareSales\obj\Debug\Pg269 SoftwareSales.exe
